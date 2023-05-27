@@ -1,0 +1,95 @@
+@import 'common/scss/variables';
+@import 'common/scss/mixins';
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-size: 10px;
+  color: $grey-primary;
+  font-family: 'Inter', sans-serif;
+  line-height: 19.2px;
+  font-weight: 400;
+  scroll-behavior: smooth;
+}
+
+.app {
+  min-height: 100vh;
+  background: $background;
+
+  .gridBox {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-areas:
+      'profile profile aboutMe projects'
+      'languages skills skills contacts'
+      'services services letsWork letsWork';
+    gap: 2rem;
+
+    margin-right: auto;
+    margin-left: auto;
+    max-width: 117rem;
+    padding-top: 8rem;
+
+    //.3_projects {
+    //  grid-area: 3_projects;
+    //  background: $background;
+    //  border-radius: 3rem;
+    //  position: relative;
+    //  box-shadow: inset 2px 2px 6px rgba(255, 255, 255, 0.15);
+    //
+    //  @include beforeElement;
+    //}
+
+    .languages {
+      grid-area: languages;
+      background: $background;
+      border-radius: 3rem;
+      position: relative;
+      box-shadow: inset 2px 2px 6px rgba(255, 255, 255, 0.15);
+
+      @include beforeElement;
+    }
+
+    .skills {
+      grid-area: skills;
+      background: $background;
+      border-radius: 3rem;
+      position: relative;
+      box-shadow: inset 2px 2px 6px rgba(255, 255, 255, 0.15);
+
+      @include beforeElement;
+    }
+
+    .contacts {
+      grid-area: contacts;
+      background: $background;
+      border-radius: 3rem;
+      position: relative;
+      box-shadow: inset 2px 2px 6px rgba(255, 255, 255, 0.15);
+
+      @include beforeElement;
+    }
+
+    .letsWork {
+      grid-area: letsWork;
+      background: $background;
+      border-radius: 3rem;
+      position: relative;
+      box-shadow: inset 2px 2px 6px rgba(255, 255, 255, 0.15);
+
+      @include beforeElement;
+    }
+
+    .smth {
+      grid-area: smth;
+      background: $background;
+      border-radius: 3rem;
+      position: relative;
+      box-shadow: inset 2px 2px 6px rgba(255, 255, 255, 0.15);
+
+      @include beforeElement;
+    }
+  }
+}

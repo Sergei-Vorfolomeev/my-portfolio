@@ -1,0 +1,48 @@
+@import 'common/scss/variables';
+@import 'common/scss/mixins';
+
+.box {
+  @include inEachBox;
+
+  grid-area: services;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  transition: 1s;
+  background: rgba(70, 180, 218, 0.65);
+  //backface-visibility: hidden;
+
+  .descriptionIconBox {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    .description {
+      display: flex;
+      flex-direction: column;
+      line-height: 1.2;
+
+      h4 {
+        color: $grey-secondary;
+        font-size: 1.2rem;
+        font-weight: 600;
+        line-height: 1.2;
+        opacity: 0.5;
+        margin-bottom: 0.6rem;
+        text-transform: uppercase;
+      }
+
+      h1 {
+        font-size: 2rem;
+        color: $white;
+        font-weight: 600;
+      }
+    }
+    @include icon;
+  }
+}
+
+.box:hover {
+  transform: rotate3d(1, 0, 0, 180deg);
+}
