@@ -6,7 +6,7 @@ import icon from 'common/assets/svg/icon-portfolio.svg'
 
 export const Profile = () => {
   return (
-    <div className={s.box}>
+    <div className={s.flipBox}>
       <div className={s.photoBox}>
         <div className={s.photo}></div>
       </div>

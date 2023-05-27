@@ -11,14 +11,19 @@ export const Languages = () => {
   const navigate = useNavigate()
 
   return (
-    <div className={s.box}>
-      <img src={myWorks} alt="myWorks" />
-      <div className={s.descriptionIconBox}>
-        <div className={s.description}>
-          <h4>My abilities</h4>
-          <h1>Languages</h1>
+    <div className={s.flipBox}>
+      <div className={s.flipCard}>
+        <div className={s.front}>
+          <img src={myWorks} alt="myWorks" />
+          <div className={s.descriptionIconBox}>
+            <div className={s.description}>
+              <h4>My abilities</h4>
+              <h1>Languages</h1>
+            </div>
+            <img src={icon} alt="icon" onClick={() => navigate('/2_about')} className={s.icon} />
+          </div>
         </div>
-        <img src={icon} alt="icon" onClick={() => navigate('/2_about')} className={s.icon} />
+        <div className={s.back}>BACK</div>
       </div>
     </div>
   )

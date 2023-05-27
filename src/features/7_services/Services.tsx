@@ -10,7 +10,7 @@ export const Services = () => {
   const navigate = useNavigate()
 
   return (
-    <div className={s.box}>
+    <div className={s.flipBox}>
       <div className={s.descriptionIconBox}>
         <div className={s.description}>
           {/*<h4>My abilities</h4>*/}

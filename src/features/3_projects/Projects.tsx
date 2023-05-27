@@ -11,7 +11,7 @@ export const Projects = () => {
   const navigate = useNavigate()
 
   return (
-    <div className={s.box}>
+    <div className={s.flipBox}>
       <img src={myWorks} alt="myWorks" />
       <div className={s.descriptionIconBox}>
         <div className={s.description}>

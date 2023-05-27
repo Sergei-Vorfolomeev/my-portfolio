@@ -1,6 +1,7 @@
 import React from 'react'
 
 import s from 'App.module.scss'
+import Example from 'common/components/example'
 import { Profile } from 'features/1_profile/Profile'
 import { About } from 'features/2_about/About'
 import { Projects } from 'features/3_projects/Projects'
@@ -21,9 +22,7 @@ function App() {
         <Skills />
         <Contacts />
         <Services />
-        <div className={s.letsWork}>
-          <LetsWork />
-        </div>
+        <LetsWork />
       </div>
     </div>
   )

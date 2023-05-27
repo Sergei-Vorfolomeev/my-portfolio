@@ -1,7 +1,7 @@
 @import 'common/scss/variables';
 @import 'common/scss/mixins';
 
-.box {
+.flipBox {
   @include inEachBox;
 
   grid-area: projects;
@@ -9,6 +9,7 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
+  background: rgba(177, 138, 208, 0.65);
 
   .descriptionIconBox {
     display: flex;

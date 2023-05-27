@@ -1,47 +1,218 @@
 @import 'common/scss/variables';
 @import 'common/scss/mixins';
 
-.box {
-  @include inEachBox;
-
+.flipBox {
   grid-area: skills;
+  perspective: 150rem;
 
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  transition: 1s;
-  //backface-visibility: hidden;
+  .flipCard {
+    @include inEachBox;
 
-  .descriptionIconBox {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+    position: relative;
+    width: 100%;
+    height: 100%;
+    transition: transform 0.6s ease;
+    transform-style: preserve-3d;
 
-    .description {
+    .front {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      backface-visibility: hidden;
+      padding: 2.4rem;
+      overflow: hidden;
+
       display: flex;
       flex-direction: column;
-      line-height: 1.2;
+      justify-content: center;
 
-      h4 {
-        color: $grey-secondary;
-        font-size: 1.2rem;
-        font-weight: 600;
-        line-height: 1.2;
-        opacity: 0.5;
-        margin-bottom: 0.6rem;
-        text-transform: uppercase;
-      }
+      .descriptionIconBox {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
 
-      h1 {
-        font-size: 2rem;
-        color: $white;
-        font-weight: 600;
+        .iconsBox {
+          display: flex;
+          justify-content: space-between;
+          padding: 3rem;
+
+          .iconReact {
+            fill: #00fff7;
+            stroke: #00f7ff;
+            stroke-width: 8;
+            height: 9rem;
+            width: 9rem;
+            animation: animationReact 4s infinite;
+            animation-timing-function: cubic-bezier(1, 1, 1, 1);
+          }
+          .iconRedux {
+            fill: rgb(183, 0, 255);
+            stroke: #00f8ff;
+            stroke-width: 0;
+            height: 9rem;
+            width: 9rem;
+            animation: animationReact 4s infinite;
+            animation-delay: 1s;
+            animation-timing-function: cubic-bezier(1, 1, 1, 1);
+          }
+          .iconAngular {
+            fill: rgb(255, 0, 0);
+            stroke: #00f8ff;
+            stroke-width: 0;
+            height: 9rem;
+            width: 9rem;
+            animation: animationReact 4s infinite;
+            animation-delay: 2s;
+            animation-timing-function: cubic-bezier(1, 1, 1, 1);
+          }
+          .iconTS {
+            position: relative;
+            top: 1rem;
+            left: 1rem;
+            fill: rgb(0, 208, 255);
+            stroke: #00f8ff;
+            stroke-width: 0;
+            height: 7rem;
+            width: 7rem;
+            animation: animationReact 4s infinite;
+            animation-delay: 3s;
+            animation-timing-function: cubic-bezier(1, 1, 1, 1);
+          }
+        }
+
+        .description {
+          display: flex;
+          flex-direction: column;
+          line-height: 1.2;
+
+          h4 {
+            color: $grey-secondary;
+            font-size: 1.2rem;
+            font-weight: 600;
+            line-height: 1.2;
+            opacity: 0.5;
+            margin-bottom: 0.6rem;
+            text-transform: uppercase;
+          }
+
+          h1 {
+            font-size: 2rem;
+            color: $white;
+            font-weight: 600;
+          }
+        }
+
+        @include icon;
       }
     }
-    @include icon;
+    .back {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      backface-visibility: hidden;
+      transform: rotateX(180deg);
+      display: flex;
+      padding: 2.4rem;
+
+      &:hover {
+        transform: rotateX(360deg);
+      }
+    }
   }
 }
 
-.box:hover {
-  transform: rotate3d(1, 0, 0, 180deg);
+.flipBox:hover .flipCard {
+  transform: rotateX(180deg);
+}
+
+// Animations
+
+@keyframes animationReact {
+  0% {
+    filter: hue-rotate(1deg);
+    transform: scale(1);
+  }
+  25% {
+    filter: hue-rotate(45deg);
+    transform: scale(0.9);
+  }
+  50% {
+    filter: hue-rotate(90deg);
+    transform: scale(0.85);
+  }
+  75% {
+    transform: scale(0.9);
+    filter: hue-rotate(45deg);
+  }
+  100% {
+    filter: hue-rotate(1deg);
+    transform: scale(1);
+  }
+}
+
+@keyframes animationRedux {
+  0% {
+    filter: hue-rotate(1deg);
+    transform: scale(1);
+  }
+  25% {
+    transform: scale(0.85);
+  }
+  50% {
+    filter: hue-rotate(180deg);
+    transform: scale(1);
+  }
+  75% {
+    transform: scale(1.1);
+  }
+  100% {
+    filter: hue-rotate(360deg);
+    transform: scale(1);
+  }
+}
+
+@keyframes animationAngular {
+  0% {
+    filter: hue-rotate(1deg);
+    transform: scale(0.85);
+  }
+  25% {
+    transform: scale(1);
+  }
+  50% {
+    filter: hue-rotate(180deg);
+    transform: scale(1.1);
+  }
+  75% {
+    transform: scale(1);
+  }
+  100% {
+    filter: hue-rotate(360deg);
+    transform: scale(0.85);
+  }
+}
+
+@keyframes animationTS {
+  0% {
+    filter: hue-rotate(1deg);
+    transform: scale(1.1);
+  }
+  25% {
+    transform: scale(1);
+  }
+  50% {
+    filter: hue-rotate(180deg);
+    transform: scale(0.85);
+  }
+  75% {
+    transform: scale(1);
+  }
+  100% {
+    filter: hue-rotate(360deg);
+    transform: scale(1.1);
+  }
 }

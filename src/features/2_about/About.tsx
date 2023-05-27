@@ -15,7 +15,7 @@ export const About = () => {
   }
 
   return (
-    <div className={s.box}>
+    <div className={s.flipBox}>
       <img src={signature} alt="signature" />
       <div className={s.descriptionIconBox}>
         <div className={s.description}>
