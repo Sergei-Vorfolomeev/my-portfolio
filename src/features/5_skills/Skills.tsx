@@ -61,7 +61,7 @@ export const Skills = () => {
             <img src={icon} alt="icon" onClick={() => navigate('/2_about')} className={s.icon} />
           </div>
         </div>
-        <div className={s.back}></div>
+        <div className={s.back}>BACK</div>
       </div>
     </div>
   )

@@ -23,7 +23,24 @@ export const Languages = () => {
             <img src={icon} alt="icon" onClick={() => navigate('/2_about')} className={s.icon} />
           </div>
         </div>
-        <div className={s.back}>BACK</div>
+        <div className={s.back}>
+          <div>
+            <h1>Languages</h1>
+          </div>
+          <div>
+            <ul>
+              <li>
+                <span className={s.language}>Czech</span> - upper intermediate
+              </li>
+              <li>
+                <span className={s.language}>English</span> - upper intermediate
+              </li>
+              <li>
+                <span className={s.language}>Russian</span> - native
+              </li>
+            </ul>
+          </div>
+        </div>
       </div>
     </div>
   )
