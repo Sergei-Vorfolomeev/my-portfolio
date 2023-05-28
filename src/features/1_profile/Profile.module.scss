@@ -15,14 +15,15 @@
     //background-image: linear-gradient(to right, #ffff00, #ffa500);
     background-image: radial-gradient(rgba(138, 138, 157, 0.41), rgba(0, 255, 247, 0.85));
     //background-image: radial-gradient(rgba(27, 204, 227, 0.85), rgba(88, 88, 192, 0.41));
-
     border-radius: 3rem;
+    animation: backgroundPhotoAnimation 10s infinite;
 
     .photo {
       width: 18rem;
       height: 18rem;
       background-image: url('../../common/assets/img/photo-cv-225px.png');
       background-position: center;
+      z-index: 5;
     }
   }
 
@@ -58,5 +59,23 @@
       font-weight: 500;
     }
     @include icon;
+  }
+}
+
+@keyframes backgroundPhotoAnimation {
+  0% {
+    filter: hue-rotate(1deg);
+  }
+  25% {
+    filter: hue-rotate(25deg);
+  }
+  50% {
+    filter: hue-rotate(1deg);
+  }
+  75% {
+    filter: hue-rotate(-25deg);
+  }
+  100% {
+    filter: hue-rotate(1deg);
   }
 }

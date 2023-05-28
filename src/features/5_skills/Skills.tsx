@@ -61,7 +61,32 @@ export const Skills = () => {
             <img src={icon} alt="icon" onClick={() => navigate('/2_about')} className={s.icon} />
           </div>
         </div>
-        <div className={s.back}>BACK</div>
+        <div className={s.back}>
+          <div className={s.content}>
+            <h1>Skills</h1>
+            <div className={s.lists}>
+              <div className={s.firstList}>
+                <ul>
+                  <li>React</li>
+                  <li>Redux</li>
+                  <li>Redux Toolkit</li>
+                  <li>Angular</li>
+                  <li>Typescript</li>
+                  <li>REST API</li>
+                </ul>
+              </div>
+              <div className={s.secondList}>
+                <ul>
+                  <li>Javascript</li>
+                  <li>Git / GitHub</li>
+                  <li>SASS / SCSS</li>
+                  <li>HTML / CSS</li>
+                  <li>Material-UI</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
   )

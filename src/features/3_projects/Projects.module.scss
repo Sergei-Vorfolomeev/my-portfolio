@@ -10,6 +10,7 @@
   flex-direction: column;
   justify-content: center;
   background: rgba(177, 138, 208, 0.65);
+  transition: all 0.5s;
 
   .descriptionIconBox {
     display: flex;
@@ -39,4 +40,8 @@
     }
     @include icon;
   }
+}
+
+.flipBox:hover {
+  transform: scale(1.05);
 }

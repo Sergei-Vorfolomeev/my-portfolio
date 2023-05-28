@@ -17,6 +17,7 @@
 
 @mixin inEachBox {
   height: 25rem;
+  width: auto;
   background: $background;
   border-radius: 3rem;
   position: relative;
