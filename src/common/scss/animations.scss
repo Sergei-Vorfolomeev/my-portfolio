@@ -83,3 +83,21 @@
     transform: scale(1.1);
   }
 }
+
+@keyframes backgroundPhotoAnimation {
+  0% {
+    filter: hue-rotate(1deg);
+  }
+  25% {
+    filter: hue-rotate(25deg);
+  }
+  50% {
+    filter: hue-rotate(1deg);
+  }
+  75% {
+    filter: hue-rotate(-25deg);
+  }
+  100% {
+    filter: hue-rotate(1deg);
+  }
+}

@@ -1,12 +1,11 @@
 import React from 'react'
 
-import s from './Profile.module.scss'
-
 import icon from 'common/assets/svg/icon-portfolio.svg'
+import s from 'features/mainPage/1_profile/Profile.module.scss'
 
 export const Profile = () => {
   return (
-    <div className={s.flipBox}>
+    <div className={s.box}>
       <div className={s.photoBox}>
         <div className={s.photo}></div>
       </div>

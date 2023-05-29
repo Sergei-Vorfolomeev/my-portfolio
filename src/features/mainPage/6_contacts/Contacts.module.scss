@@ -1,5 +1,5 @@
-@import 'common/scss/variables';
-@import 'common/scss/mixins';
+@import '../../../common/scss/variables';
+@import '../../../common/scss/mixins';
 
 .flipBox {
   perspective: 150rem;
@@ -8,24 +8,25 @@
   .flipCard {
     @include inEachBox;
 
-    position: relative;
     width: 100%;
     height: 100%;
     transition: transform 0.6s ease;
     transform-style: preserve-3d;
 
-    &::after {
-      content: '';
-      position: absolute;
-      top: 0;
-      bottom: 0;
-      width: 100%;
-      height: 100%;
-      z-index: 5;
-      overflow: hidden;
-    }
+    //&::after {
+    //  content: '';
+    //  position: absolute;
+    //  top: 0;
+    //  bottom: 0;
+    //  width: 100%;
+    //  height: 100%;
+    //  z-index: 5;
+    //  overflow: hidden;
+    //}
 
     .front {
+      @include afterElementForFlippingCard;
+
       position: absolute;
       top: 0;
       left: 0;
@@ -49,10 +50,7 @@
 
         .iconContacts {
           fill: #00fff7;
-          stroke: #00f7ff;
-          stroke-width: 0;
-          height: 9rem;
-          width: 9rem;
+
           //animation: contactIconAnimation 4s infinite;
         }
       }
@@ -83,34 +81,46 @@
             font-weight: 600;
           }
         }
+
         @include icon;
       }
     }
 
     .back {
+      @include afterElementForFlippingCard;
+
       position: absolute;
       top: 0;
       left: 0;
       width: 100%;
       height: 100%;
       backface-visibility: hidden;
-      transform: rotateY(-180deg);
+      transform: rotateY(180deg);
 
       display: flex;
       flex-direction: column;
       justify-content: space-between;
       padding: 2.4rem;
-      //pointer-events: none;
+      transition: all 1s;
 
       .phone {
         display: flex;
         align-items: center;
         font-size: 1.2rem;
+        text-decoration: none;
         color: $white;
 
         .phoneIcon {
           margin-right: 1rem;
           fill: $white;
+        }
+
+        &:hover {
+          color: $color-primary;
+
+          .phoneIcon {
+            fill: $color-primary;
+          }
         }
       }
 
@@ -118,11 +128,20 @@
         display: flex;
         align-items: center;
         font-size: 1.2rem;
+        text-decoration: none;
         color: $white;
 
         .emailIcon {
           margin-right: 1rem;
           fill: $white;
+        }
+
+        &:hover {
+          color: $color-primary;
+
+          .emailIcon {
+            fill: $color-primary;
+          }
         }
       }
 
@@ -130,48 +149,68 @@
         display: flex;
         align-items: center;
 
-        a {
-          font-size: 1.2rem;
-          text-decoration: none;
-          color: $white;
-        }
+        font-size: 1.2rem;
+        text-decoration: none;
+        color: $white;
 
         .gitHubIcon {
           margin-right: 1rem;
           fill: $white;
+        }
+
+        &:hover {
+          color: $color-primary;
+
+          .gitHubIcon {
+            fill: $color-primary;
+          }
         }
       }
 
       .linkedIn {
         display: flex;
         align-items: center;
-
-        a {
-          font-size: 1.2rem;
-          text-decoration: none;
-          color: $white;
-        }
+        font-size: 1.2rem;
+        text-decoration: none;
+        color: $white;
 
         .linkedInIcon {
           margin-right: 1rem;
           fill: $white;
+        }
+
+        &:hover {
+          color: $color-primary;
+
+          .linkedInIcon {
+            fill: $color-primary;
+          }
         }
       }
 
       .telegram {
         display: flex;
         align-items: center;
-
-        a {
-          font-size: 1.2rem;
-          text-decoration: none;
-          color: $white;
-        }
+        font-size: 1.2rem;
+        text-decoration: none;
+        color: $white;
 
         .telegramIcon {
           margin-right: 1rem;
           fill: $white;
         }
+
+        &:hover {
+          color: $color-primary;
+
+          .telegramIcon {
+            fill: $color-primary;
+          }
+        }
+      }
+
+      &:hover {
+        transform: rotateY(180deg);
       }
     }
   }
@@ -179,9 +218,6 @@
 
 .flipBox:hover .flipCard {
   transform: rotateY(-180deg);
-}
-.flipBox:hover .back {
-  transform: rotateY(180deg);
 }
 
 @keyframes contactIconAnimation {

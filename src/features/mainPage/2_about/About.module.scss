@@ -1,16 +1,14 @@
-@import 'common/scss/variables';
-@import 'common/scss/mixins';
+@import '../../../common/scss/variables';
+@import '../../../common/scss/mixins';
 
-.flipBox {
+.box {
   @include inEachBox;
+  @include beforeElement;
 
-  grid-area: services;
-
+  grid-area: aboutMe;
   display: flex;
   flex-direction: column;
   justify-content: center;
-  transition: 1s;
-  background: rgba(255, 145, 0, 0.52);
 
   .descriptionIconBox {
     display: flex;
@@ -40,8 +38,4 @@
     }
     @include icon;
   }
-}
-
-.flipBox:hover {
-  transform: rotate3d(1, 0, 0, 180deg);
 }

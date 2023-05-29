@@ -2,9 +2,8 @@ import React from 'react'
 
 import { useNavigate } from 'react-router-dom'
 
-import s from './Services.module.scss'
-
 import icon from 'common/assets/svg/icon-portfolio.svg'
+import s from 'features/mainPage/7_services/Services.module.scss'
 
 export const Services = () => {
   const navigate = useNavigate()

@@ -1,8 +1,10 @@
-@import 'common/scss/variables';
-@import 'common/scss/mixins';
+@import '../../../common/scss/variables';
+@import '../../../common/scss/mixins';
+@import '../../../common/scss/animations';
 
-.flipBox {
+.box {
   @include inEachBox;
+  @include beforeElement;
 
   grid-area: profile;
   display: flex;
@@ -21,7 +23,7 @@
     .photo {
       width: 18rem;
       height: 18rem;
-      background-image: url('../../common/assets/img/photo-cv-225px.png');
+      background-image: url('../../../common/assets/img/photo-cv-225px.png');
       background-position: center;
       z-index: 5;
     }
@@ -59,23 +61,5 @@
       font-weight: 500;
     }
     @include icon;
-  }
-}
-
-@keyframes backgroundPhotoAnimation {
-  0% {
-    filter: hue-rotate(1deg);
-  }
-  25% {
-    filter: hue-rotate(25deg);
-  }
-  50% {
-    filter: hue-rotate(1deg);
-  }
-  75% {
-    filter: hue-rotate(-25deg);
-  }
-  100% {
-    filter: hue-rotate(1deg);
   }
 }

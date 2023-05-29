@@ -2,9 +2,8 @@ import React from 'react'
 
 import { useNavigate } from 'react-router-dom'
 
-import s from './Languages.module.scss'
-
 import icon from 'common/assets/svg/icon-portfolio.svg'
+import s from 'features/mainPage/4_languages/Languages.module.scss'
 
 export const Languages = () => {
   const navigate = useNavigate()
@@ -27,7 +26,7 @@ export const Languages = () => {
           </div>
           <div className={s.descriptionBox}>
             <div className={s.description}>
-              <h4>My abilities</h4>
+              <h4>Abilities</h4>
               <h1>Languages</h1>
             </div>
             <img src={icon} alt="icon" onClick={() => navigate('/2_about')} className={s.icon} />

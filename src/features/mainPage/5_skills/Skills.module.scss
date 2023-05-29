@@ -1,6 +1,6 @@
-@import 'common/scss/variables';
-@import 'common/scss/mixins';
-@import 'common/scss/animations';
+@import '../../../common/scss/variables';
+@import '../../../common/scss/mixins';
+@import '../../../common/scss/animations';
 
 .flipBox {
   grid-area: skills;
@@ -9,13 +9,14 @@
   .flipCard {
     @include inEachBox;
 
-    position: relative;
     width: 100%;
     height: 100%;
     transition: transform 0.6s ease;
     transform-style: preserve-3d;
 
     .front {
+      @include afterElementForFlippingCard;
+
       position: absolute;
       top: 0;
       left: 0;
@@ -66,9 +67,8 @@
             stroke-width: 0;
             height: 9rem;
             width: 9rem;
-            animation: animationReact 4s infinite;
+            animation: animationReact 4s infinite ease-in-out;
             animation-delay: 2s;
-            animation-timing-function: cubic-bezier(1, 1, 1, 1);
           }
 
           .iconTS {
@@ -113,6 +113,8 @@
     }
 
     .back {
+      @include afterElementForFlippingCard;
+
       position: absolute;
       top: 0;
       left: 0;
@@ -150,17 +152,22 @@
               font-size: 1.7rem;
               font-weight: 500;
               line-height: 2.3rem;
+              cursor: pointer;
+
+              &:hover {
+                color: $color-primary;
+              }
             }
           }
         }
+      }
+      &:hover {
+        transform: rotateX(-180deg);
       }
     }
   }
 }
 
 .flipBox:hover .flipCard {
-  transform: rotateX(180deg);
-}
-.flipBox:hover .back {
   transform: rotateX(180deg);
 }

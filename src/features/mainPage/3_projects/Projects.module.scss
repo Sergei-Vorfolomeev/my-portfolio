@@ -1,13 +1,17 @@
-@import 'common/scss/variables';
-@import 'common/scss/mixins';
+@import '../../../common/scss/variables';
+@import '../../../common/scss/mixins';
 
-.flipBox {
+.box {
   @include inEachBox;
+  @include beforeElement;
 
-  grid-area: aboutMe;
+  grid-area: projects;
+
   display: flex;
   flex-direction: column;
   justify-content: center;
+  background: rgba(177, 138, 208, 0.65);
+  transition: all 0.5s;
 
   .descriptionIconBox {
     display: flex;
@@ -37,4 +41,8 @@
     }
     @include icon;
   }
+}
+
+.box:hover {
+  transform: scale(1.05);
 }

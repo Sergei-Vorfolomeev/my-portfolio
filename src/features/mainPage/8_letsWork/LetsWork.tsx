@@ -2,9 +2,8 @@ import React from 'react'
 
 import { useNavigate } from 'react-router-dom'
 
-import s from './LetsWork.module.scss'
-
 import icon from 'common/assets/svg/icon-portfolio.svg'
+import s from 'features/mainPage/8_letsWork/LetsWork.module.scss'
 
 export const LetsWork = () => {
   const navigate = useNavigate()
