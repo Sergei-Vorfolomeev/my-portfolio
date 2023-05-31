@@ -1,0 +1,144 @@
+@import 'common/scss/variables';
+@import 'common/scss/mixins';
+@import 'common/scss/animations';
+
+.mainBox {
+  padding-top: 6.5rem;
+  max-width: 117rem;
+  margin: 0 auto;
+  min-height: 100vh;
+
+  .gridBox {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    gap: 3rem;
+
+    .titleBox {
+      grid-column-start: 2;
+      grid-column-end: span 2;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      h1 {
+        color: $white;
+        font-size: 7.4rem;
+        font-weight: 600;
+        text-transform: uppercase;
+        letter-spacing: -01px;
+        margin-top: 2px;
+      }
+    }
+
+    .project1 {
+      @include beforeElement;
+
+      //grid-column-start: 1;
+      //grid-column-end: 2;
+      //grid-row-start: 1;
+      //grid-row-end: 5;
+      display: flex;
+      flex-direction: column;
+      position: relative;
+
+      padding: 1.6rem 1.6rem 2.6rem 1.6rem;
+
+      img {
+        border-radius: 30px;
+        margin-bottom: 1.3rem;
+      }
+
+      .description {
+        .projectInfo {
+          p {
+            color: #bcbcbc;
+            opacity: 0.5;
+            font-size: 1.4rem;
+            text-transform: uppercase;
+            margin-bottom: 2px;
+            margin-top: 5px;
+          }
+          h1 {
+            font-size: 2.2rem;
+            color: $white;
+            opacity: 0.9;
+            font-weight: 500;
+          }
+        }
+        @include icon;
+        .icon {
+          bottom: 0;
+        }
+      }
+    }
+    .project2 {
+      @include beforeElement;
+
+      grid-column-start: 2;
+      grid-column-end: 3;
+      grid-row-start: 2;
+      grid-row-end: 6;
+
+      display: flex;
+      flex-direction: column;
+      position: relative;
+
+      padding: 1.6rem 1.6rem 2.6rem 1.6rem;
+
+      img {
+        border-radius: 30px;
+        margin-bottom: 1.3rem;
+      }
+
+      .description {
+        .projectInfo {
+          p {
+            color: #bcbcbc;
+            opacity: 0.5;
+            font-size: 1.4rem;
+            text-transform: uppercase;
+            margin-bottom: 2px;
+            margin-top: 5px;
+          }
+          h1 {
+            font-size: 2.2rem;
+            color: $white;
+            opacity: 0.9;
+            font-weight: 500;
+          }
+        }
+        @include icon;
+        .icon {
+          bottom: 0;
+        }
+      }
+    }
+
+    .project3 {
+      grid-column-start: 3;
+      grid-column-end: 4;
+      grid-row-start: 2;
+      grid-row-end: 6;
+      background: #feffc9;
+    }
+    .project4 {
+      grid-column-start: 1;
+      grid-column-end: 2;
+      grid-row-start: 5;
+      grid-row-end: end;
+    }
+    .project5 {
+      grid-column-start: 2;
+      grid-column-end: 3;
+      grid-row-start: 6;
+      grid-row-end: end;
+    }
+    .project6 {
+      grid-column-start: 3;
+      grid-column-end: 4;
+      grid-row-start: 6;
+      grid-row-end: end;
+    }
+  }
+}
