@@ -2,12 +2,16 @@ import React from 'react'
 
 import s from './AboutPage.module.scss'
 
+import avatar from 'common/assets/img/AvatarCV.png'
+
 export const AboutPage = () => {
   return (
     <div className={s.mainBox}>
       <div className={s.sideBar}>
         <div className={s.photoBox}>
-          <div className={s.photo}></div>
+          <div className={s.photo}>
+            <img src={avatar} alt="avatar" />
+          </div>
         </div>
         <h2>Sergey Vorfolomeev</h2>
         <ul className={s.socialLinks}>
@@ -83,15 +87,11 @@ export const AboutPage = () => {
         <div className={s.about}>
           <h2>About Me</h2>
           <p>
-            Sit amet luctussd fav venenatis, lectus magna fringilla inis urna, porttitor rhoncus
-            dolor purus non enim praesent in elementum sahas facilisis leo, vel fringilla est
-            ullamcorper eget nulla facilisi etisam dignissim diam quis enim lobortis viverra orci
-            sagittis eu volutpat odio facilisis mauris sit.
-          </p>
-          <p>
-            Scelerisque fermentum duisi faucibus in ornare quam sisd sit amet luctussd fav
-            venenatis, lectus magna fringilla zac urna, porttitor rhoncus dolor purus non enim
-            praesent cuz elementum sahas facilisis leot.
+            I&apos;m a front-end developer with experience in creating SPA using React, Redux,
+            TypeScript, JavaScript, CSS, HTML. Now I am improving my skills in this direction and
+            expanding them with new technologies (now it&apos;s Angular). Also, my strengths are
+            great analytical skills, responsibility and stress resistance. Ready to consider project
+            work and full-time employment.
           </p>
         </div>
         <div className={s.experience}>
@@ -103,18 +103,60 @@ export const AboutPage = () => {
             <h4>Part time</h4>
             &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
             <h4>2022 – 2023</h4>
+            <a
+              href={'https://github.com/Sergei-Vorfolomeev/it-incubator-todolist-ts-01'}
+              className={s.projectTitle}
+            >
+              Tasks Manager
+            </a>
             <p>
               Sit amet luctussd fav venenatis, lectus magna fringilla inis urna, porttitor rhoncus
               dolor purus non enim praesent in elementum sahas facilisis leo, vel fringilla est
               ullamcorper eget nulla facilisi etisam dignissim diam quis enim lobortis viverra orci
               sagittis eu volutpat odio facilisis mauris sit.
             </p>
+            <a
+              href={'https://github.com/Sergei-Vorfolomeev/friday-project'}
+              className={s.projectTitle}
+            >
+              Application for learning using cards
+            </a>
             <p>
               Sit amet luctussd fav venenatis, lectus magna fringilla inis urna, porttitor rhoncus
               dolor purus non enim praesent in elementum sahas facilisis leo, vel fringilla est
               ullamcorper eget nulla facilisi etisam dignissim diam quis enim lobortis viverra orci
               sagittis eu volutpat odio facilisis mauris sit.
             </p>
+            <a
+              href={'https://github.com/Sergei-Vorfolomeev/new-social-network'}
+              className={s.projectTitle}
+            >
+              Social Network
+            </a>
+            <p>
+              Sit amet luctussd fav venenatis, lectus magna fringilla inis urna, porttitor rhoncus
+              dolor purus non enim praesent in elementum sahas facilisis leo, vel fringilla est
+              ullamcorper eget nulla facilisi etisam dignissim diam quis enim lobortis viverra orci
+              sagittis eu volutpat odio facilisis mauris sit.
+            </p>
+            <a
+              href={'https://github.com/Sergei-Vorfolomeev/orbita-project'}
+              className={s.projectTitle}
+            >
+              Orbita project
+            </a>
+            <p>
+              Sit amet luctussd fav venenatis, lectus magna fringilla inis urna, porttitor rhoncus
+              dolor purus non enim praesent in elementum sahas facilisis leo, vel fringilla est
+              ullamcorper eget nulla facilisi etisam dignissim diam quis enim lobortis viverra orci
+              sagittis eu volutpat odio facilisis mauris sit.
+            </p>
+            <a
+              href={'https://github.com/Sergei-Vorfolomeev/todolist-angular'}
+              className={s.projectTitle}
+            >
+              Todolist Angular
+            </a>
             <p>
               Sit amet luctussd fav venenatis, lectus magna fringilla inis urna, porttitor rhoncus
               dolor purus non enim praesent in elementum sahas facilisis leo, vel fringilla est
@@ -128,10 +170,10 @@ export const AboutPage = () => {
             Education
           </h2>
           <div className="credential-edc-exp-item aos-init aos-animate" data-aos="zoom-in">
-            <h3>Specialist degree in medicine</h3>
-            <h4>Saratov State Medical University</h4>
-            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-            <h4>2014 - 2020</h4>
+            <h3>Sertificate of Frontend Developer</h3>
+            <h4>IT-Incubator</h4>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <h4>2022 – 2023</h4>
             <p>
               Sit amet luctussd fav venenatis, lectus magna fringilla inis urna, porttitor rhoncus
               dolor purus non enim praesent in elementum sahas facilisis leo, vel fringilla est
@@ -140,10 +182,10 @@ export const AboutPage = () => {
             </p>
           </div>
           <div className="credential-edc-exp-item aos-init aos-animate" data-aos="zoom-in">
-            <h3>Sertificate of Frontend Developer</h3>
-            <h4>IT-Incubator</h4>
-            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-            <h4>2004 - 2007</h4>
+            <h3>Specialist degree in medicine</h3>
+            <h4>Saratov State Medical University</h4>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <h4>2014 – 2020</h4>
             <p>
               Sit amet luctussd fav venenatis, lectus magna fringilla inis urna, porttitor rhoncus
               dolor purus non enim praesent in elementum sahas facilisis leo, vel fringilla est

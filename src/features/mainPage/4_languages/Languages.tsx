@@ -37,17 +37,20 @@ export const Languages = () => {
             <h1>Languages</h1>
           </div>
           <div>
-            <ul>
-              <li>
-                <span className={s.language}>Czech</span> - upper intermediate
-              </li>
-              <li>
-                <span className={s.language}>English</span> - upper intermediate
-              </li>
-              <li>
-                <span className={s.language}>Russian</span> - advanced
-              </li>
-            </ul>
+            <div className={s.czech}>
+              <span>Czech</span>
+              <p>upper intermediate</p>
+            </div>
+
+            <div className={s.english}>
+              <span>English</span>
+              <p>upper intermediate</p>
+            </div>
+
+            <div className={s.russian}>
+              <span>Russian</span>
+              <p>advanced</p>
+            </div>
           </div>
         </div>
       </div>

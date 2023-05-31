@@ -66,23 +66,19 @@ export const Skills = () => {
             <h1>Skills</h1>
             <div className={s.lists}>
               <div className={s.firstList}>
-                <ul>
-                  <li>React</li>
-                  <li>Redux</li>
-                  <li>Redux Toolkit</li>
-                  <li>Angular</li>
-                  <li>Typescript</li>
-                  <li>REST API</li>
-                </ul>
-              </div>
-              <div className={s.secondList}>
-                <ul>
-                  <li>Javascript</li>
-                  <li>Git / GitHub</li>
-                  <li>SASS / SCSS</li>
-                  <li>HTML / CSS</li>
-                  <li>Material-UI</li>
-                </ul>
+                <p className={s.react}>React</p>
+                <p className={s.redux}>Redux</p>
+                <p className={s.rtk}>Redux Toolkit</p>
+                <p className={s.angular}>Angular</p>
+                <p className={s.typescript}>Typescript</p>
+                <p className={s.restAPI}>REST API</p>
+                <p className={s.javascript}>Javascript</p>
+                <p className={s.git}>Git / GitHub</p>
+                <p className={s.sass}>SASS / SCSS</p>
+                <p className={s.html}>HTML</p>
+                <p className={s.mui}>Material-UI</p>
+                <p className={s.unitTests}>Unit-tests</p>
+                <p className={s.storybook}>Storybook</p>
               </div>
             </div>
           </div>

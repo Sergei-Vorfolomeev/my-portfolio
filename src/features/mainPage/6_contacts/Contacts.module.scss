@@ -103,109 +103,70 @@
       padding: 2.4rem;
       transition: all 1s;
 
-      .phone {
+      .socialLinks {
+        gap: 1rem;
+        margin-bottom: 3.6rem;
+        list-style: none;
         display: flex;
-        align-items: center;
-        font-size: 1.2rem;
-        text-decoration: none;
-        color: $white;
 
-        .phoneIcon {
-          margin-right: 1rem;
-          fill: $white;
-        }
+        .circlePhone,
+        .circleMail,
+        .circleGitHub,
+        .circleLinkedIn,
+        .circleTelegram {
+          width: 5.2rem;
+          height: 5.2rem;
+          border-radius: 50%;
+          display: block;
+          position: absolute;
+          color: $white;
+          font-size: 2rem;
+          border: 1px solid rgba(255, 255, 255, 0.05);
+          background: linear-gradient(120deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.01));
+          box-shadow: inset 5px 2.5px 50px 10px rgba(255, 255, 255, 0.13);
+          transition: 0.3s;
 
-        &:hover {
-          color: $color-primary;
+          &:hover {
+            background: $color-primary;
 
-          .phoneIcon {
-            fill: $color-primary;
+            .icon {
+              fill: $background;
+            }
+          }
+
+          .icon {
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%, -50%);
+            fill: $white;
+            width: 2.8rem;
+            height: 2.8rem;
           }
         }
-      }
 
-      .email {
-        display: flex;
-        align-items: center;
-        font-size: 1.2rem;
-        text-decoration: none;
-        color: $white;
-
-        .emailIcon {
-          margin-right: 1rem;
-          fill: $white;
+        .circlePhone {
+          top: 16.25%;
+          left: 16.25%;
         }
 
-        &:hover {
-          color: $color-primary;
-
-          .emailIcon {
-            fill: $color-primary;
-          }
-        }
-      }
-
-      .gitHub {
-        display: flex;
-        align-items: center;
-
-        font-size: 1.2rem;
-        text-decoration: none;
-        color: $white;
-
-        .gitHubIcon {
-          margin-right: 1rem;
-          fill: $white;
+        .circleMail {
+          top: 16.25%;
+          right: 16.25%;
         }
 
-        &:hover {
-          color: $color-primary;
-
-          .gitHubIcon {
-            fill: $color-primary;
-          }
+        .circleGitHub {
+          bottom: 16.25%;
+          right: 16.25%;
         }
-      }
-
-      .linkedIn {
-        display: flex;
-        align-items: center;
-        font-size: 1.2rem;
-        text-decoration: none;
-        color: $white;
-
-        .linkedInIcon {
-          margin-right: 1rem;
-          fill: $white;
+        .circleTelegram {
+          bottom: 16.25%;
+          left: 16.25%;
         }
-
-        &:hover {
-          color: $color-primary;
-
-          .linkedInIcon {
-            fill: $color-primary;
-          }
-        }
-      }
-
-      .telegram {
-        display: flex;
-        align-items: center;
-        font-size: 1.2rem;
-        text-decoration: none;
-        color: $white;
-
-        .telegramIcon {
-          margin-right: 1rem;
-          fill: $white;
-        }
-
-        &:hover {
-          color: $color-primary;
-
-          .telegramIcon {
-            fill: $color-primary;
-          }
+        .circleLinkedIn {
+          top: 50%;
+          left: 50%;
+          transform: translate(-50%, -50%);
         }
       }
 
