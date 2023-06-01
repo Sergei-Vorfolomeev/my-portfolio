@@ -10,8 +10,13 @@ export const Projects = () => {
   const navigate = useNavigate()
 
   return (
-    <div className={s.box}>
-      <img src={myWorks} alt="myWorks" />
+    <div
+      className={s.box}
+      onClick={() => {
+        navigate('/projects')
+      }}
+    >
+      <img src={myWorks} alt="myWorks" className={s.myWorks} />
       <div className={s.descriptionIconBox}>
         <div className={s.description}>
           <h4>Show cases</h4>

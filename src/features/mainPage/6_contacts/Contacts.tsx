@@ -6,8 +6,6 @@ import icon from 'common/assets/svg/icon-portfolio.svg'
 import s from 'features/mainPage/6_contacts/Contacts.module.scss'
 
 export const Contacts = () => {
-  const navigate = useNavigate()
-
   return (
     <div className={s.flipBox}>
       <div className={s.flipCard}>
@@ -30,7 +28,7 @@ export const Contacts = () => {
               <h4>Get in touch</h4>
               <h1>Contacts</h1>
             </div>
-            <img src={icon} alt="icon" onClick={() => navigate('/2_about')} className={s.icon} />
+            <img src={icon} alt="icon" className={s.icon} />
           </div>
         </div>
         <div className={s.back}>

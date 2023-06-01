@@ -5,12 +5,25 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-size: 10px;
+  font-size: 62.5%;
   color: $grey-primary;
   font-family: 'Inter', sans-serif;
   line-height: 1.92rem;
   font-weight: 400;
   scroll-behavior: smooth;
+
+  @media (max-width: 1200px) {
+    font-size: 56.25%; // 1rem = 9px
+  }
+  @media (max-width: 900px) {
+    font-size: 50%; // 1rem = 8px
+  }
+  //@media (max-width: 680px) {
+  //  font-size: 43.75%; // 1rem = 7px
+  //}
+  //@media (min-width: 1800px) {
+  //  font-size: 75%; // 1rem = 12px
+  //}
 }
 
 .app {

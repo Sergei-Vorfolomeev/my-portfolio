@@ -6,8 +6,6 @@ import icon from 'common/assets/svg/icon-portfolio.svg'
 import s from 'features/mainPage/5_skills/Skills.module.scss'
 
 export const Skills = () => {
-  const navigate = useNavigate()
-
   return (
     <div className={s.flipBox}>
       <div className={s.flipCard}>

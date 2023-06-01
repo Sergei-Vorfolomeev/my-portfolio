@@ -6,7 +6,7 @@
   display: flex;
   max-width: 117rem;
   margin: 0 auto;
-  padding-top: 8rem;
+  padding-top: 6.5rem;
 
   .sideBar {
     @include beforeElement;
@@ -37,7 +37,6 @@
         //background-image: url('../../../common/assets/img/DSCF7515.png');
         //background-position: center;
         //background-size: cover;
-        //z-index: 5;
         display: flex;
         justify-content: center;
         align-items: center;
@@ -245,6 +244,24 @@
       //  transition: 0.3s;
       //  cursor: pointer;
       //}
+    }
+  }
+
+  @media (max-width: 800px) {
+    display: flex;
+    flex-direction: column;
+
+    .sideBar {
+      position: relative;
+      margin: 0 auto 2.4rem;
+      width: 90%;
+
+      .photoBox {
+        width: 70%;
+      }
+    }
+    .content {
+      margin: 0 10%;
     }
   }
 }

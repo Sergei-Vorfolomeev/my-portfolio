@@ -17,7 +17,7 @@
     border-radius: 30px;
     overflow: hidden;
     min-height: 34rem;
-    min-width: 34rem;
+    min-width: 33.4rem;
     margin-bottom: 1.5rem;
     position: relative;
 
@@ -86,5 +86,13 @@
       }
     }
     @include icon;
+  }
+
+  @media (max-width: 650px) {
+    margin: 2.4rem;
+
+    .imgBox {
+      max-height: 500px;
+    }
   }
 }

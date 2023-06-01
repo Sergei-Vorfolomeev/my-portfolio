@@ -11,7 +11,6 @@
   flex-direction: column;
   justify-content: center;
   transition: 1s;
-  //backface-visibility: hidden;
 
   .descriptionIconBox {
     display: flex;
@@ -41,7 +40,6 @@
         margin: 0;
 
         span {
-          //color: #5b78f6;
           color: rgba(0, 255, 247, 0.85);
           font-size: 44px;
           line-height: 52px;
@@ -51,8 +49,4 @@
     }
     @include icon;
   }
-}
-
-.flipBox:hover {
-  transform: rotate3d(1, 0, 0, 180deg);
 }

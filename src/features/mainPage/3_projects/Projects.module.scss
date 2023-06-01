@@ -41,6 +41,13 @@
     }
     @include icon;
   }
+
+  @media (max-width: 1050px) {
+    .myWorks {
+      height: 80%;
+      margin: 0 auto;
+    }
+  }
 }
 
 .box:hover {

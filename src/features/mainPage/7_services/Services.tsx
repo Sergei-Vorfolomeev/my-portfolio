@@ -15,7 +15,7 @@ export const Services = () => {
           {/*<h4>My abilities</h4>*/}
           <h1>Services</h1>
         </div>
-        <img src={icon} alt="icon" onClick={() => navigate('/2_about')} className={s.icon} />
+        <img src={icon} alt="icon" onClick={() => navigate('/services')} className={s.icon} />
       </div>
     </div>
   )

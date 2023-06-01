@@ -19,10 +19,11 @@ export type ProjectType = {
   projectLink: string
   repoLink: string
   style: {
-    gridColumnStart: number
-    gridColumnEnd: number | string
-    gridRowStart: number
-    gridRowEnd: number | string
+    gridArea: string
+    // gridColumnStart: number
+    // gridColumnEnd: number | string
+    // gridRowStart: number
+    // gridRowEnd: number | string
   }
 }
 
@@ -39,10 +40,11 @@ export const projects: ProjectType[] = [
     projectLink: '',
     repoLink: '',
     style: {
-      gridColumnStart: 1,
-      gridColumnEnd: 2,
-      gridRowStart: 1,
-      gridRowEnd: 5,
+      gridArea: 'portfolio',
+      // gridColumnStart: 1,
+      // gridColumnEnd: 2,
+      // gridRowStart: 1,
+      // gridRowEnd: 5,
     },
   },
   {
@@ -53,7 +55,13 @@ export const projects: ProjectType[] = [
     img: todolistImg,
     projectLink: 'https://sergei-vorfolomeev.github.io/todolist-ts-01/',
     repoLink: 'https://github.com/Sergei-Vorfolomeev/todolist-ts-01',
-    style: { gridColumnStart: 2, gridColumnEnd: 3, gridRowStart: 2, gridRowEnd: 6 },
+    style: {
+      gridArea: 'taskManager',
+      // gridColumnStart: 2,
+      // gridColumnEnd: 3,
+      // gridRowStart: 2,
+      // gridRowEnd: 6,
+    },
   },
 
   {
@@ -64,7 +72,13 @@ export const projects: ProjectType[] = [
     img: flashCardsImg,
     projectLink: 'https://sergei-vorfolomeev.github.io/cards-project/',
     repoLink: 'https://github.com/Sergei-Vorfolomeev/cards-project',
-    style: { gridColumnStart: 3, gridColumnEnd: 'end', gridRowStart: 2, gridRowEnd: 6 },
+    style: {
+      gridArea: 'flashCards',
+      // gridColumnStart: 3,
+      // gridColumnEnd: 'end',
+      // gridRowStart: 2,
+      // gridRowEnd: 6,
+    },
   },
 
   {
@@ -75,7 +89,13 @@ export const projects: ProjectType[] = [
     img: orbitaImg,
     projectLink: 'https://sergei-vorfolomeev.github.io/orbita-project/',
     repoLink: 'https://github.com/Sergei-Vorfolomeev/orbita-project',
-    style: { gridColumnStart: 1, gridColumnEnd: 2, gridRowStart: 5, gridRowEnd: 'end' },
+    style: {
+      gridArea: 'orbita',
+      // gridColumnStart: 1,
+      // gridColumnEnd: 2,
+      // gridRowStart: 5,
+      // gridRowEnd: 'end',
+    },
   },
 
   {
@@ -86,7 +106,13 @@ export const projects: ProjectType[] = [
     img: socialNetworkImg,
     projectLink: 'https://sergei-vorfolomeev.github.io/new-social-network/',
     repoLink: 'https://github.com/Sergei-Vorfolomeev/new-social-network',
-    style: { gridColumnStart: 2, gridColumnEnd: 3, gridRowStart: 6, gridRowEnd: 'end' },
+    style: {
+      gridArea: 'socialNetwork',
+      // gridColumnStart: 2,
+      // gridColumnEnd: 3,
+      // gridRowStart: 6,
+      // gridRowEnd: 'end',
+    },
   },
 
   {
@@ -96,7 +122,13 @@ export const projects: ProjectType[] = [
     img: todolistNgImg,
     projectLink: '',
     repoLink: 'https://github.com/Sergei-Vorfolomeev/todolist-angular',
-    style: { gridColumnStart: 3, gridColumnEnd: 'end', gridRowStart: 6, gridRowEnd: 'end' },
+    style: {
+      gridArea: 'todoAng',
+      // gridColumnStart: 3,
+      // gridColumnEnd: 'end',
+      // gridRowStart: 6,
+      // gridRowEnd: 'end',
+    },
   },
 ]
 

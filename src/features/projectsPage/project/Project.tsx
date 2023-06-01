@@ -7,10 +7,11 @@ import { GitHubIcon } from 'common/components/icons/github/GitHubIcon'
 
 type PropsType = {
   style: {
-    gridColumnStart: number
-    gridColumnEnd: number | string
-    gridRowStart: number
-    gridRowEnd: number | string
+    gridArea: string
+    // gridColumnStart: number
+    // gridColumnEnd: number | string
+    // gridRowStart: number
+    // gridRowEnd: number | string
   }
   img: string
   title: string
