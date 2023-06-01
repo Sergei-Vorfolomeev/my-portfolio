@@ -1,4 +1,4 @@
-@keyframes animationReact {
+@keyframes skillIconAnimation {
   0% {
     filter: hue-rotate(1deg);
     transform: scale(1);
@@ -18,69 +18,6 @@
   100% {
     filter: hue-rotate(1deg);
     transform: scale(1);
-  }
-}
-
-@keyframes animationRedux {
-  0% {
-    filter: hue-rotate(1deg);
-    transform: scale(1);
-  }
-  25% {
-    transform: scale(0.85);
-  }
-  50% {
-    filter: hue-rotate(180deg);
-    transform: scale(1);
-  }
-  75% {
-    transform: scale(1.1);
-  }
-  100% {
-    filter: hue-rotate(360deg);
-    transform: scale(1);
-  }
-}
-
-@keyframes animationAngular {
-  0% {
-    filter: hue-rotate(1deg);
-    transform: scale(0.85);
-  }
-  25% {
-    transform: scale(1);
-  }
-  50% {
-    filter: hue-rotate(180deg);
-    transform: scale(1.1);
-  }
-  75% {
-    transform: scale(1);
-  }
-  100% {
-    filter: hue-rotate(360deg);
-    transform: scale(0.85);
-  }
-}
-
-@keyframes animationTS {
-  0% {
-    filter: hue-rotate(1deg);
-    transform: scale(1.1);
-  }
-  25% {
-    transform: scale(1);
-  }
-  50% {
-    filter: hue-rotate(180deg);
-    transform: scale(0.85);
-  }
-  75% {
-    transform: scale(1);
-  }
-  100% {
-    filter: hue-rotate(360deg);
-    transform: scale(1.1);
   }
 }
 

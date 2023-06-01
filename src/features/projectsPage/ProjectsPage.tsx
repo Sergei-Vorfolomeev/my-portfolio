@@ -8,6 +8,7 @@ import projectImg from 'common/assets/img/projectImg.jpeg'
 import socialNetworkImg from 'common/assets/img/socialNetwork.avif'
 import todolistImg from 'common/assets/img/stickersImg.jpeg'
 import todolistNgImg from 'common/assets/img/todolistImg.jpeg'
+import { Navbar } from 'features/navbar/Navbar'
 import { Project } from 'features/projectsPage/project/Project'
 
 export type ProjectType = {
@@ -101,24 +102,27 @@ export const projects: ProjectType[] = [
 
 export const ProjectsPage = () => {
   return (
-    <section className={s.mainBox}>
-      <div className={s.gridBox}>
-        <div className={s.titleBox}>
-          <h1>Projects</h1>
-        </div>
+    <>
+      <Navbar />
+      <section className={s.mainBox}>
+        <div className={s.gridBox}>
+          <div className={s.titleBox}>
+            <h1>Projects</h1>
+          </div>
 
-        {projects.map(el => (
-          <Project
-            key={el.id}
-            img={el.img}
-            style={el.style}
-            title={el.title}
-            description={el.description}
-            projectLink={el.projectLink}
-            repoLink={el.repoLink}
-          />
-        ))}
-      </div>
-    </section>
+          {projects.map(el => (
+            <Project
+              key={el.id}
+              img={el.img}
+              style={el.style}
+              title={el.title}
+              description={el.description}
+              projectLink={el.projectLink}
+              repoLink={el.repoLink}
+            />
+          ))}
+        </div>
+      </section>
+    </>
   )
 }

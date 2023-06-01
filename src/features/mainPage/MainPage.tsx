@@ -10,18 +10,22 @@ import { Skills } from 'features/mainPage/5_skills/Skills'
 import { Contacts } from 'features/mainPage/6_contacts/Contacts'
 import { Services } from 'features/mainPage/7_services/Services'
 import { LetsWork } from 'features/mainPage/8_letsWork/LetsWork'
+import { Navbar } from 'features/navbar/Navbar'
 
 export const MainPage = () => {
   return (
-    <div className={s.gridBox}>
-      <Profile />
-      <About />
-      <Projects />
-      <Languages />
-      <Skills />
-      <Contacts />
-      <Services />
-      <LetsWork />
-    </div>
+    <>
+      <Navbar />
+      <section className={s.gridBox}>
+        <Profile />
+        <About />
+        <Projects />
+        <Languages />
+        <Skills />
+        <Contacts />
+        <Services />
+        <LetsWork />
+      </section>
+    </>
   )
 }

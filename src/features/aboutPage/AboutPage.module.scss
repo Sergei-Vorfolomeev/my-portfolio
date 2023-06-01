@@ -213,7 +213,7 @@
 
         span {
           font-size: 2rem;
-          color: rgb(147, 201, 198);
+          color: rgb(65, 255, 247);
           font-weight: 500;
           opacity: 0.8;
           line-height: 1.7;
@@ -221,7 +221,6 @@
           cursor: pointer;
 
           &:hover {
-            color: $color-primary;
             transform: scale(1.1);
             text-shadow: 0 10px 20px black;
           }

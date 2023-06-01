@@ -46,7 +46,7 @@
             stroke-width: 8;
             height: 9rem;
             width: 9rem;
-            animation: animationReact 4s infinite;
+            animation: skillIconAnimation 4s infinite;
             animation-timing-function: cubic-bezier(1, 1, 1, 1);
           }
 
@@ -56,7 +56,7 @@
             stroke-width: 0;
             height: 9rem;
             width: 9rem;
-            animation: animationReact 4s infinite;
+            animation: skillIconAnimation 4s infinite;
             animation-delay: 1s;
             animation-timing-function: cubic-bezier(1, 1, 1, 1);
           }
@@ -67,7 +67,7 @@
             stroke-width: 0;
             height: 9rem;
             width: 9rem;
-            animation: animationReact 4s infinite ease-in-out;
+            animation: skillIconAnimation 4s infinite ease-in-out;
             animation-delay: 2s;
           }
 
@@ -80,7 +80,7 @@
             stroke-width: 0;
             height: 7rem;
             width: 7rem;
-            animation: animationReact 4s infinite;
+            animation: skillIconAnimation 4s infinite;
             animation-delay: 3s;
             animation-timing-function: cubic-bezier(1, 1, 1, 1);
           }
