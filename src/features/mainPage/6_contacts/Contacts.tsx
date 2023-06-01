@@ -2,7 +2,6 @@ import React from 'react'
 
 import { useNavigate } from 'react-router-dom'
 
-import cub from 'common/assets/svg/2026955.svg'
 import icon from 'common/assets/svg/icon-portfolio.svg'
 import s from 'features/mainPage/6_contacts/Contacts.module.scss'
 

@@ -1,0 +1,12 @@
+.iconGitHub {
+  margin-right: 0.6rem;
+  fill: #00f8ff;
+  width: 2.8rem;
+  height: 2.8rem;
+  cursor: pointer;
+  transition: 0.3s;
+
+  &:hover {
+    fill: rgb(218, 146, 253);
+  }
+}
