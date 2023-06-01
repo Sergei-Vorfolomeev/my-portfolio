@@ -3,6 +3,7 @@ import React from 'react'
 import s from './AboutPage.module.scss'
 
 import avatar from 'common/assets/img/AvatarCV.png'
+import { projects } from 'features/projectsPage/ProjectsPage'
 
 export const AboutPage = () => {
   return (
@@ -89,113 +90,106 @@ export const AboutPage = () => {
           <p>
             I&apos;m a front-end developer with experience in creating SPA using React, Redux,
             TypeScript, JavaScript, CSS, HTML. Now I am improving my skills in this direction and
-            expanding them with new technologies (now it&apos;s Angular). Also, my strengths are
-            great analytical skills, responsibility and stress resistance. Ready to consider project
-            work and full-time employment.
+            expanding them with learning new technologies. Also, my strengths are great analytical
+            skills, responsibility and stress resistance. Ready to consider project work and
+            full-time employment.
           </p>
         </div>
         <div className={s.experience}>
-          <h2 data-aos="fade-up" className="aos-init aos-animate">
-            My projects as
-          </h2>
-          <div className="credential-edc-exp-item aos-init aos-animate" data-aos="zoom-in">
+          <h2>My projects as</h2>
+          <div>
             <h3>Frontend developer</h3>
             <h4>Part time</h4>
             &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
             <h4>2022 – 2023</h4>
-            <a
-              href={'https://github.com/Sergei-Vorfolomeev/it-incubator-todolist-ts-01'}
-              className={s.projectTitle}
-            >
-              Tasks Manager
-            </a>
-            <p>
-              Sit amet luctussd fav venenatis, lectus magna fringilla inis urna, porttitor rhoncus
-              dolor purus non enim praesent in elementum sahas facilisis leo, vel fringilla est
-              ullamcorper eget nulla facilisi etisam dignissim diam quis enim lobortis viverra orci
-              sagittis eu volutpat odio facilisis mauris sit.
-            </p>
-            <a
-              href={'https://github.com/Sergei-Vorfolomeev/friday-project'}
-              className={s.projectTitle}
-            >
-              Application for learning using cards
-            </a>
-            <p>
-              Sit amet luctussd fav venenatis, lectus magna fringilla inis urna, porttitor rhoncus
-              dolor purus non enim praesent in elementum sahas facilisis leo, vel fringilla est
-              ullamcorper eget nulla facilisi etisam dignissim diam quis enim lobortis viverra orci
-              sagittis eu volutpat odio facilisis mauris sit.
-            </p>
-            <a
-              href={'https://github.com/Sergei-Vorfolomeev/new-social-network'}
-              className={s.projectTitle}
-            >
-              Social Network
-            </a>
-            <p>
-              Sit amet luctussd fav venenatis, lectus magna fringilla inis urna, porttitor rhoncus
-              dolor purus non enim praesent in elementum sahas facilisis leo, vel fringilla est
-              ullamcorper eget nulla facilisi etisam dignissim diam quis enim lobortis viverra orci
-              sagittis eu volutpat odio facilisis mauris sit.
-            </p>
-            <a
-              href={'https://github.com/Sergei-Vorfolomeev/orbita-project'}
-              className={s.projectTitle}
-            >
-              Orbita project
-            </a>
-            <p>
-              Sit amet luctussd fav venenatis, lectus magna fringilla inis urna, porttitor rhoncus
-              dolor purus non enim praesent in elementum sahas facilisis leo, vel fringilla est
-              ullamcorper eget nulla facilisi etisam dignissim diam quis enim lobortis viverra orci
-              sagittis eu volutpat odio facilisis mauris sit.
-            </p>
-            <a
-              href={'https://github.com/Sergei-Vorfolomeev/todolist-angular'}
-              className={s.projectTitle}
-            >
-              Todolist Angular
-            </a>
-            <p>
-              Sit amet luctussd fav venenatis, lectus magna fringilla inis urna, porttitor rhoncus
-              dolor purus non enim praesent in elementum sahas facilisis leo, vel fringilla est
-              ullamcorper eget nulla facilisi etisam dignissim diam quis enim lobortis viverra orci
-              sagittis eu volutpat odio facilisis mauris sit.
-            </p>
+            {projects.map(el => (
+              <div key={el.id}>
+                <a href={el.projectLink} className={s.projectTitle}>
+                  {el.title}
+                </a>
+                <p>{el.description}</p>
+              </div>
+            ))}
           </div>
         </div>
         <div className={s.education}>
-          <h2 data-aos="fade-up" className="aos-init aos-animate">
-            Education
-          </h2>
-          <div className="credential-edc-exp-item aos-init aos-animate" data-aos="zoom-in">
+          <h2>Education</h2>
+          <div>
             <h3>Sertificate of Frontend Developer</h3>
             <h4>IT-Incubator</h4>
             &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
             <h4>2022 – 2023</h4>
-            <p>
-              Sit amet luctussd fav venenatis, lectus magna fringilla inis urna, porttitor rhoncus
-              dolor purus non enim praesent in elementum sahas facilisis leo, vel fringilla est
-              ullamcorper eget nulla facilisi etisam dignissim diam quis enim lobortis viverra orci
-              sagittis eu volutpat odio facilisis mauris sit.
-            </p>
+            {/*<p>*/}
+            {/*  Sit amet luctussd fav venenatis, lectus magna fringilla inis urna, porttitor rhoncus*/}
+            {/*  dolor purus non enim praesent in elementum sahas facilisis leo, vel fringilla est*/}
+            {/*  ullamcorper eget nulla facilisi etisam dignissim diam quis enim lobortis viverra orci*/}
+            {/*  sagittis eu volutpat odio facilisis mauris sit.*/}
+            {/*</p>*/}
           </div>
-          <div className="credential-edc-exp-item aos-init aos-animate" data-aos="zoom-in">
+          <div>
+            <h3>Upper Intermediate in Czech</h3>
+            <h4>Go Study Language School</h4>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <h4>2021 – 2022</h4>
+            {/*<p>*/}
+            {/*  Sit amet luctussd fav venenatis, lectus magna fringilla inis urna, porttitor rhoncus*/}
+            {/*  dolor purus non enim praesent in elementum sahas facilisis leo, vel fringilla est*/}
+            {/*  ullamcorper eget nulla facilisi etisam dignissim diam quis enim lobortis viverra orci*/}
+            {/*  sagittis eu volutpat odio facilisis mauris sit.*/}
+            {/*</p>*/}
+          </div>
+          <div>
             <h3>Specialist degree in medicine</h3>
             <h4>Saratov State Medical University</h4>
             &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
             <h4>2014 – 2020</h4>
-            <p>
-              Sit amet luctussd fav venenatis, lectus magna fringilla inis urna, porttitor rhoncus
-              dolor purus non enim praesent in elementum sahas facilisis leo, vel fringilla est
-              ullamcorper eget nulla facilisi etisam dignissim diam quis enim lobortis viverra orci
-              sagittis eu volutpat odio facilisis mauris sit.
-            </p>
+            {/*<p>*/}
+            {/*  Sit amet luctussd fav venenatis, lectus magna fringilla inis urna, porttitor rhoncus*/}
+            {/*  dolor purus non enim praesent in elementum sahas facilisis leo, vel fringilla est*/}
+            {/*  ullamcorper eget nulla facilisi etisam dignissim diam quis enim lobortis viverra orci*/}
+            {/*  sagittis eu volutpat odio facilisis mauris sit.*/}
+            {/*</p>*/}
           </div>
         </div>
-        <div className={s.skills}></div>
-        <div className={s.languages}></div>
+        <div className={s.skills}>
+          <h2>Skills</h2>
+          <div className={s.listsBox}>
+            <ul>
+              <li>React</li>
+              <li>Redux</li>
+              <li>Redux Toolkit</li>
+              <li>Angular</li>
+              <li>Typescript</li>
+              <li>REST API</li>
+              <li>Javascript</li>
+            </ul>
+            <ul>
+              <li>SCSS</li>
+              <li>HTML</li>
+              <li>GIT / GITHUB</li>
+              <li>Unit-tests</li>
+              <li>Material-UI</li>
+              <li>Storybook</li>
+            </ul>
+          </div>
+        </div>
+        <div className={s.languages}>
+          <h2>Languages</h2>
+          <div className={s.czech}>
+            <span>Czech&nbsp;</span>
+            <p> - upper intermediate</p>
+          </div>
+
+          <div className={s.english}>
+            <span>English&nbsp;</span>
+            <p>- upper intermediate</p>
+          </div>
+
+          <div className={s.russian}>
+            <span>Russian&nbsp;</span>
+            <p>- advanced</p>
+          </div>
+        </div>
       </div>
     </div>
   )

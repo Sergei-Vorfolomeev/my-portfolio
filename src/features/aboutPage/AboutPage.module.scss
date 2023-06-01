@@ -101,7 +101,9 @@
 
     .about,
     .experience,
-    .education {
+    .education,
+    .skills,
+    .languages {
       margin-bottom: 11rem;
 
       h2 {
@@ -129,6 +131,7 @@
         display: inline-block;
         margin-bottom: 3.7rem;
       }
+
       h3 {
         font-size: 1.8rem;
         color: #5b78f6;
@@ -138,13 +141,6 @@
     }
 
     .experience {
-      margin-bottom: 11rem;
-
-      [data-aos^='fade'][data-aos^='fade'].aos-animate {
-        opacity: 1;
-        transform: translateZ(0);
-      }
-
       h2 {
         margin-bottom: 0.3rem;
       }
@@ -159,7 +155,7 @@
         margin-bottom: 0.5rem;
         font-weight: 500;
         text-decoration: none;
-        display: block;
+        display: inline-block;
         transition: all 0.3s;
 
         &:hover {
@@ -169,22 +165,87 @@
     }
 
     .education {
-      margin-bottom: 11rem;
-
       h4 {
         margin-bottom: 1.5rem;
       }
+
       p {
         margin-bottom: 3.7rem;
       }
     }
 
     .skills {
-      margin-bottom: 11rem;
+      display: flex;
+      flex-direction: column;
+
+      .listsBox {
+        display: flex;
+
+        ul:not(:last-child) {
+          margin-left: 1.6rem;
+          margin-right: 20rem;
+        }
+
+        li {
+          font-size: 1.6rem;
+          color: #fff;
+          opacity: 0.8;
+          line-height: 1.9;
+          transition: 0.3s;
+          cursor: pointer;
+
+          &:hover {
+            color: $color-primary;
+          }
+        }
+      }
     }
 
     .languages {
-      margin-bottom: 11rem;
+      display: flex;
+      flex-direction: column;
+
+      .czech,
+      .english,
+      .russian {
+        display: flex;
+        align-items: center;
+
+        span {
+          font-size: 2rem;
+          color: rgb(147, 201, 198);
+          font-weight: 500;
+          opacity: 0.8;
+          line-height: 1.7;
+          transition: 0.3s;
+          cursor: pointer;
+
+          &:hover {
+            color: $color-primary;
+            transform: scale(1.1);
+            text-shadow: 0 10px 20px black;
+          }
+        }
+
+        p {
+          color: #bcbcbc;
+          opacity: 0.6;
+          font-size: 1.4rem;
+          font-weight: 400;
+          margin-bottom: 0;
+        }
+      }
+
+      //.language {
+      //  font-size: 2rem;
+      //  //color: rgb(147, 201, 198);
+      //  color: #fff;
+      //  font-weight: 500;
+      //  opacity: 0.8;
+      //  line-height: 1.7;
+      //  transition: 0.3s;
+      //  cursor: pointer;
+      //}
     }
   }
 }

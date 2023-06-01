@@ -13,79 +13,93 @@ import { Project } from 'features/projectsPage/project/Project'
 export type ProjectType = {
   id: number
   title: string
+  description: string
   img: string
+  projectLink: string
+  repoLink: string
   style: {
     gridColumnStart: number
     gridColumnEnd: number | string
     gridRowStart: number
     gridRowEnd: number | string
   }
-  description?: string
-  projectLink: string
-  repoLink: string
 }
 
+export const projects: ProjectType[] = [
+  {
+    id: 0,
+    title: 'Portfolio',
+    img: projectImg,
+    description:
+      '    Sit amet luctussd fav venenatis, lectus magna fringilla inis urna, porttitor rhoncus\n' +
+      '              dolor purus non enim praesent in elementum sahas facilisis leo, vel fringilla est\n' +
+      '              ullamcorper eget nulla facilisi etisam dignissim diam quis enim lobortis viverra orci\n' +
+      '              sagittis eu volutpat odio facilisis mauris sit.',
+    projectLink: '',
+    repoLink: '',
+    style: {
+      gridColumnStart: 1,
+      gridColumnEnd: 2,
+      gridRowStart: 1,
+      gridRowEnd: 5,
+    },
+  },
+  {
+    id: 1,
+    title: 'Tasks Manager',
+    description:
+      'My project for managing time building with React. Redux Toolkit was used as main state manager. In project were implemented the basic CRUD operations, filtration, interaction with backend with understanding REST-API architecture and principles, asynchronous requests using Promises in Axios library, handling errors occurring on the client or server, working with forms and validation using Formik, Yup library. Also working with complicated data structures like an associative array. Material UI was used for styling of application. ',
+    img: todolistImg,
+    projectLink: 'https://sergei-vorfolomeev.github.io/todolist-ts-01/',
+    repoLink: 'https://github.com/Sergei-Vorfolomeev/todolist-ts-01',
+    style: { gridColumnStart: 2, gridColumnEnd: 3, gridRowStart: 2, gridRowEnd: 6 },
+  },
+
+  {
+    id: 2,
+    title: 'Flash Cards',
+    description:
+      'Project development in a team with using React, Redux, Typescript, Formik, MUI, REST API, Axios. The main feature of this project was working with version control system - Git. Also for formatting and styling code were used Prettier, EsLint and StyleLint.',
+    img: flashCardsImg,
+    projectLink: 'https://sergei-vorfolomeev.github.io/cards-project/',
+    repoLink: 'https://github.com/Sergei-Vorfolomeev/cards-project',
+    style: { gridColumnStart: 3, gridColumnEnd: 'end', gridRowStart: 2, gridRowEnd: 6 },
+  },
+
+  {
+    id: 3,
+    title: 'Orbita',
+    description:
+      'My education project for the space travel company of the future with using CSS-preprocessors (SCSS), HTML-5, responsive design for all the devices.',
+    img: orbitaImg,
+    projectLink: 'https://sergei-vorfolomeev.github.io/orbita-project/',
+    repoLink: 'https://github.com/Sergei-Vorfolomeev/orbita-project',
+    style: { gridColumnStart: 1, gridColumnEnd: 2, gridRowStart: 5, gridRowEnd: 'end' },
+  },
+
+  {
+    id: 4,
+    title: 'Social Network',
+    description:
+      'My education project with using React, Redux, Typescript and so on. Part of project was written with using class components, which now are deprecated in React. But this experience helps to better understand OOP principles, SOLID principles, and just a legacy code.',
+    img: socialNetworkImg,
+    projectLink: 'https://sergei-vorfolomeev.github.io/new-social-network/',
+    repoLink: 'https://github.com/Sergei-Vorfolomeev/new-social-network',
+    style: { gridColumnStart: 2, gridColumnEnd: 3, gridRowStart: 6, gridRowEnd: 'end' },
+  },
+
+  {
+    id: 5,
+    title: 'Todolist on Angular',
+    description: 'My education project with using Angular',
+    img: todolistNgImg,
+    projectLink: '',
+    repoLink: 'https://github.com/Sergei-Vorfolomeev/todolist-angular',
+    style: { gridColumnStart: 3, gridColumnEnd: 'end', gridRowStart: 6, gridRowEnd: 'end' },
+  },
+]
+
 export const ProjectsPage = () => {
-  const projects: ProjectType[] = [
-    {
-      id: 0,
-      title: 'Portfolio',
-      img: projectImg,
-      style: {
-        gridColumnStart: 1,
-        gridColumnEnd: 2,
-        gridRowStart: 1,
-        gridRowEnd: 5,
-      },
-      projectLink: '',
-      repoLink: '',
-    },
-    {
-      id: 1,
-      title: 'Tasks Manager',
-      img: todolistImg,
-      style: { gridColumnStart: 2, gridColumnEnd: 3, gridRowStart: 2, gridRowEnd: 6 },
-      projectLink: 'https://sergei-vorfolomeev.github.io/todolist-ts-01/',
-      repoLink: 'https://github.com/Sergei-Vorfolomeev/todolist-ts-01',
-    },
-
-    {
-      id: 2,
-      title: 'Flash Cards',
-      img: flashCardsImg,
-      style: { gridColumnStart: 3, gridColumnEnd: 'end', gridRowStart: 2, gridRowEnd: 6 },
-      projectLink: 'https://sergei-vorfolomeev.github.io/cards-project/',
-      repoLink: 'https://github.com/Sergei-Vorfolomeev/cards-project',
-    },
-
-    {
-      id: 3,
-      title: 'Orbita',
-      img: orbitaImg,
-      style: { gridColumnStart: 1, gridColumnEnd: 2, gridRowStart: 5, gridRowEnd: 'end' },
-      projectLink: 'https://sergei-vorfolomeev.github.io/orbita-project/',
-      repoLink: 'https://github.com/Sergei-Vorfolomeev/orbita-project',
-    },
-
-    {
-      id: 4,
-      title: 'Social Network',
-      img: socialNetworkImg,
-      style: { gridColumnStart: 2, gridColumnEnd: 3, gridRowStart: 6, gridRowEnd: 'end' },
-      projectLink: 'https://sergei-vorfolomeev.github.io/new-social-network/',
-      repoLink: 'https://github.com/Sergei-Vorfolomeev/new-social-network',
-    },
-
-    {
-      id: 5,
-      title: 'Todolist on Angular',
-      img: todolistNgImg,
-      style: { gridColumnStart: 3, gridColumnEnd: 'end', gridRowStart: 6, gridRowEnd: 'end' },
-      projectLink: '',
-      repoLink: 'https://github.com/Sergei-Vorfolomeev/todolist-angular',
-    },
-  ]
-
   return (
     <section className={s.mainBox}>
       <div className={s.gridBox}>
