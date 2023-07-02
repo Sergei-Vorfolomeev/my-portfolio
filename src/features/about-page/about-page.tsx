@@ -4,12 +4,12 @@ import s from 'features/about-page/about-page.module.scss'
 
 import avatar from 'common/assets/img/cv-photo-640px.png'
 import { Navbar } from 'features/navbar/navbar'
-import { projects } from 'features/projects-page/projects-page'
 import { PhoneIcon } from "common/icons/contacts-icons/phone-icon";
 import { MailIcon } from "common/icons/contacts-icons/mail-icon";
 import { GitHubIcon } from "common/icons/contacts-icons/git-hub-icon";
 import { LinkedInIcon } from "common/icons/contacts-icons/linked-in-icon";
 import { TelegramIcon } from "common/icons/contacts-icons/telegram-icon";
+import { projects } from "features/projects-page/project/projects-store";
 
 export const AboutPage = () => {
   return (

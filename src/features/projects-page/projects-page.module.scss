@@ -10,19 +10,21 @@
 
   .gridBox {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(12, 1fr);
     gap: 3rem;
     grid-template-areas:
       'portfolio title title'
-      'portfolio taskManager flashCards'
-      'portfolio taskManager flashCards'
-      'portfolio taskManager flashCards'
-      'orbita taskManager flashCards'
-      'orbita socialNetwork todoAng'
-      'orbita socialNetwork todoAng'
-      'orbita socialNetwork todoAng'
-      'orbita socialNetwork todoAng';
+      'portfolio tic-tac-toe taskManager'
+      'portfolio tic-tac-toe taskManager'
+      'orbita tic-tac-toe taskManager'
+      'orbita flashCards socialNetwork'
+      'orbita flashCards socialNetwork'
+      'orbita flashCards socialNetwork'
+      'todoAng . .'
+      'todoAng . .'
+      'todoAng . .';
+
 
     .titleBox {
       //grid-column-start: 2;
