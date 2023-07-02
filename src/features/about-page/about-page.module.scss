@@ -172,10 +172,11 @@
 
       .listsBox {
         display: flex;
+        justify-content: space-between;
 
         ul:not(:last-child) {
           margin-left: 1.6rem;
-          margin-right: 20rem;
+          //margin-right: 20rem;
         }
 
         li {

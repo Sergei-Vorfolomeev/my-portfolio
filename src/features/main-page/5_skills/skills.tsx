@@ -38,7 +38,7 @@ export const Skills = () => {
                 <p className={s.restAPI}>REST API</p>
                 <p className={s.javascript}>Javascript</p>
                 <p className={s.git}>Git / GitHub</p>
-                <p className={s.sass}>SASS / SCSS / Tailwind</p>
+                <p className={s.sass}>SCSS / Tailwind</p>
                 <p className={s.html}>HTML</p>
                 <p className={s.mui}>Material-UI</p>
                 <p className={s.unitTests}>Node-JS</p>
