@@ -1,11 +1,12 @@
 {
   "files": {
-    "main.css": "/my-portfolio/static/css/main.0001ccb2.css",
-    "main.js": "/my-portfolio/static/js/main.243abbae.js",
+    "main.css": "/my-portfolio/static/css/main.3df3822c.css",
+    "main.js": "/my-portfolio/static/js/main.48fae3f2.js",
     "static/js/787.128fc6e9.chunk.js": "/my-portfolio/static/js/787.128fc6e9.chunk.js",
     "static/media/cv-photo-640px.png": "/my-portfolio/static/media/cv-photo-640px.414bfdf141cdef6e879d.png",
     "static/media/astronaut900.jpg": "/my-portfolio/static/media/astronaut900.2c3f5ba59193a3318452.jpg",
     "static/media/socialNetwork.avif": "/my-portfolio/static/media/socialNetwork.3443969f9a5165f60d63.avif",
+    "static/media/tic-tac-toe-game-img.png": "/my-portfolio/static/media/tic-tac-toe-game-img.ecf4f368809c4e916f7f.png",
     "static/media/stickersImg.jpeg": "/my-portfolio/static/media/stickersImg.62922e737bbc28f177a0.jpeg",
     "static/media/flashCardsImg.png": "/my-portfolio/static/media/flashCardsImg.b53e61c27b8cb96ca008.png",
     "static/media/photo-cv-225px.png": "/my-portfolio/static/media/photo-cv-225px.47ddef915469e9c32560.png",
@@ -13,12 +14,12 @@
     "static/media/my-works-cv.png": "/my-portfolio/static/media/my-works-cv.cd688270b2d5b2a0350d.png",
     "index.html": "/my-portfolio/index.html",
     "static/media/icon-portfolio.svg": "/my-portfolio/static/media/icon-portfolio.4732ec8d0f2d830fb916568ba6a7b501.svg",
-    "main.0001ccb2.css.map": "/my-portfolio/static/css/main.0001ccb2.css.map",
-    "main.243abbae.js.map": "/my-portfolio/static/js/main.243abbae.js.map",
+    "main.3df3822c.css.map": "/my-portfolio/static/css/main.3df3822c.css.map",
+    "main.48fae3f2.js.map": "/my-portfolio/static/js/main.48fae3f2.js.map",
     "787.128fc6e9.chunk.js.map": "/my-portfolio/static/js/787.128fc6e9.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.0001ccb2.css",
-    "static/js/main.243abbae.js"
+    "static/css/main.3df3822c.css",
+    "static/js/main.48fae3f2.js"
   ]
 }
