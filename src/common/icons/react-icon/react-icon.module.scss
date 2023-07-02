@@ -1,0 +1,19 @@
+@import '../../scss/variables';
+@import '../../scss/mixins';
+@import '../../scss/animations';
+
+.iconReact {
+  fill: #00fff7;
+  stroke: #00f7ff;
+  stroke-width: 8;
+  height: 9rem;
+  width: 9rem;
+  animation: skillIconAnimation 4s infinite;
+  animation-timing-function: cubic-bezier(1, 1, 1, 1);
+
+  @media (max-width: 550px) {
+    position: absolute;
+    top: 15%;
+    left: 10%;
+  }
+}

@@ -4,6 +4,7 @@ import { useNavigate } from 'react-router-dom'
 
 import icon from 'common/assets/svg/icon-portfolio.svg'
 import s from 'features/mainPage/4_languages/Languages.module.scss'
+import { CommonIcon } from "common/icons/common-icon/common-icon";
 
 export const Languages = () => {
   return (
@@ -27,7 +28,7 @@ export const Languages = () => {
               <h4>Abilities</h4>
               <h1>Languages</h1>
             </div>
-            <img src={icon} alt="icon" className={s.icon} />
+            <CommonIcon />
           </div>
         </div>
         <div className={s.back}>

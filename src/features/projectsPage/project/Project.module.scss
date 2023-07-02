@@ -21,6 +21,10 @@
     margin-bottom: 1.5rem;
     position: relative;
 
+    @media (max-width: 450px) {
+      min-width: 200px;
+    }
+
     img {
       border-radius: 30px;
       width: 100%;
@@ -85,7 +89,6 @@
         align-items: center;
       }
     }
-    @include icon;
   }
 
   @media (max-width: 650px) {

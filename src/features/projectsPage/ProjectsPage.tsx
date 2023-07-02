@@ -20,10 +20,6 @@ export type ProjectType = {
   repoLink: string
   style: {
     gridArea: string
-    // gridColumnStart: number
-    // gridColumnEnd: number | string
-    // gridRowStart: number
-    // gridRowEnd: number | string
   }
 }
 
@@ -33,18 +29,11 @@ export const projects: ProjectType[] = [
     title: 'Portfolio',
     img: projectImg,
     description:
-      '    Sit amet luctussd fav venenatis, lectus magna fringilla inis urna, porttitor rhoncus\n' +
-      '              dolor purus non enim praesent in elementum sahas facilisis leo, vel fringilla est\n' +
-      '              ullamcorper eget nulla facilisi etisam dignissim diam quis enim lobortis viverra orci\n' +
-      '              sagittis eu volutpat odio facilisis mauris sit.',
+      "My portfolio project that you're watching now. It's built with using CSS-preprocessors (SCSS), HTML-5, responsive design for all the devices.",
     projectLink: '',
     repoLink: '',
     style: {
       gridArea: 'portfolio',
-      // gridColumnStart: 1,
-      // gridColumnEnd: 2,
-      // gridRowStart: 1,
-      // gridRowEnd: 5,
     },
   },
   {
@@ -57,10 +46,6 @@ export const projects: ProjectType[] = [
     repoLink: 'https://github.com/Sergei-Vorfolomeev/todolist-ts-01',
     style: {
       gridArea: 'taskManager',
-      // gridColumnStart: 2,
-      // gridColumnEnd: 3,
-      // gridRowStart: 2,
-      // gridRowEnd: 6,
     },
   },
 
@@ -74,10 +59,6 @@ export const projects: ProjectType[] = [
     repoLink: 'https://github.com/Sergei-Vorfolomeev/cards-project',
     style: {
       gridArea: 'flashCards',
-      // gridColumnStart: 3,
-      // gridColumnEnd: 'end',
-      // gridRowStart: 2,
-      // gridRowEnd: 6,
     },
   },
 
@@ -91,10 +72,6 @@ export const projects: ProjectType[] = [
     repoLink: 'https://github.com/Sergei-Vorfolomeev/orbita-project',
     style: {
       gridArea: 'orbita',
-      // gridColumnStart: 1,
-      // gridColumnEnd: 2,
-      // gridRowStart: 5,
-      // gridRowEnd: 'end',
     },
   },
 
@@ -108,26 +85,18 @@ export const projects: ProjectType[] = [
     repoLink: 'https://github.com/Sergei-Vorfolomeev/new-social-network',
     style: {
       gridArea: 'socialNetwork',
-      // gridColumnStart: 2,
-      // gridColumnEnd: 3,
-      // gridRowStart: 6,
-      // gridRowEnd: 'end',
     },
   },
 
   {
     id: 5,
     title: 'Todolist on Angular',
-    description: 'My education project with using Angular',
+    description: 'My education project with using Angular.',
     img: todolistNgImg,
-    projectLink: '',
+    projectLink: 'https://github.com/Sergei-Vorfolomeev/todolist-angular',
     repoLink: 'https://github.com/Sergei-Vorfolomeev/todolist-angular',
     style: {
       gridArea: 'todoAng',
-      // gridColumnStart: 3,
-      // gridColumnEnd: 'end',
-      // gridRowStart: 6,
-      // gridRowEnd: 'end',
     },
   },
 ]

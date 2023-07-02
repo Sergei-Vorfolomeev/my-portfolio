@@ -1,17 +1,11 @@
 import React from 'react'
-
 import s from './Project.module.scss'
-
-import icon from 'common/assets/svg/icon-portfolio.svg'
 import { GitHubIcon } from 'common/components/icons/github/GitHubIcon'
+import { CommonIcon } from "common/icons/common-icon/common-icon";
 
 type PropsType = {
   style: {
     gridArea: string
-    // gridColumnStart: number
-    // gridColumnEnd: number | string
-    // gridRowStart: number
-    // gridRowEnd: number | string
   }
   img: string
   title: string
@@ -20,7 +14,7 @@ type PropsType = {
   repoLink: string
 }
 
-export const Project = ({ style, title, img, description, projectLink, repoLink }: PropsType) => {
+export const Project = ({ style, title, img, projectLink, repoLink }: PropsType) => {
   return (
     <div className={s.project} style={style}>
       <div className={s.imgBox}>
@@ -40,7 +34,7 @@ export const Project = ({ style, title, img, description, projectLink, repoLink 
           </p>
         </div>
         <a href={projectLink}>
-          <img src={icon} alt="icon" className={s.icon} />
+          <CommonIcon />
         </a>
       </div>
     </div>

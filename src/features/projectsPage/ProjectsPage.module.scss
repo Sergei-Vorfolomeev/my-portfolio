@@ -39,11 +39,15 @@
         text-transform: uppercase;
         letter-spacing: -01px;
         margin-top: 2px;
+
+        @media (max-width: 450px) {
+          font-size: 5.5rem;
+        }
       }
     }
   }
 
-  @media (max-width: 1050px) {
+  @media (max-width: 1200px) {
     padding: 6.5rem 2rem;
 
     .gridBox {
@@ -68,7 +72,7 @@
     }
   }
 
-  @media (max-width: 650px) {
+  @media (max-width: 800px) {
     padding: 6.5rem 2rem;
 
     .gridBox {

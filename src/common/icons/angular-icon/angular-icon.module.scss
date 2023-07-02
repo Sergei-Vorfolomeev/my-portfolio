@@ -1,0 +1,19 @@
+@import '../../scss/variables';
+@import '../../scss/mixins';
+@import '../../scss/animations';
+
+.iconAngular {
+  fill: rgb(255, 0, 0);
+  stroke: #00f8ff;
+  stroke-width: 0;
+  height: 9rem;
+  width: 9rem;
+  animation: skillIconAnimation 4s infinite ease-in-out;
+  animation-delay: 2s;
+
+  @media (max-width: 550px) {
+    position: absolute;
+    bottom: 25%;
+    left: 10%;
+  }
+}

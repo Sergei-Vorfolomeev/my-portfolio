@@ -3,7 +3,6 @@
 
 .flipBox {
   @include inEachBox;
-  @include beforeElement;
 
   grid-area: letsWork;
 
@@ -11,6 +10,7 @@
   flex-direction: column;
   justify-content: center;
   transition: 1s;
+  background: linear-gradient(120deg, rgba(255, 255, 255, 0.05), rgba(255, 255, 255, 0));
 
   .descriptionIconBox {
     display: flex;
@@ -47,6 +47,5 @@
         }
       }
     }
-    @include icon;
   }
 }

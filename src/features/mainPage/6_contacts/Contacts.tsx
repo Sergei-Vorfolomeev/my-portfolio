@@ -4,6 +4,7 @@ import { useNavigate } from 'react-router-dom'
 
 import icon from 'common/assets/svg/icon-portfolio.svg'
 import s from 'features/mainPage/6_contacts/Contacts.module.scss'
+import { CommonIcon } from "common/icons/common-icon/common-icon";
 
 export const Contacts = () => {
   return (
@@ -28,7 +29,7 @@ export const Contacts = () => {
               <h4>Get in touch</h4>
               <h1>Contacts</h1>
             </div>
-            <img src={icon} alt="icon" className={s.icon} />
+            <CommonIcon />
           </div>
         </div>
         <div className={s.back}>

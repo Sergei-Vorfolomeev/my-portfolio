@@ -3,6 +3,7 @@ import React from 'react'
 import avatar from 'common/assets/img/AvatarCV.png'
 import icon from 'common/assets/svg/icon-portfolio.svg'
 import s from 'features/mainPage/1_profile/Profile.module.scss'
+import { CommonIcon } from "common/icons/common-icon/common-icon";
 
 export const Profile = () => {
   return (
@@ -17,7 +18,7 @@ export const Profile = () => {
         <h4>Frontend developer</h4>
         <h1>Sergey Vorfolomeev</h1>
         <p>I am a Frontend Developer based in Prague</p>
-        <img src={icon} alt="icon" className={s.icon} />
+        <CommonIcon />
       </div>
     </div>
   )

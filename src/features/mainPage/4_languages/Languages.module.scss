@@ -3,6 +3,7 @@
 
 .flipBox {
   perspective: 150rem;
+  -webkit-perspective: 150rem;
   grid-area: languages;
 
   .flipCard {
@@ -14,8 +15,9 @@
     transform-style: preserve-3d;
 
     .front {
-      @include afterElementForFlippingCard;
 
+      background: linear-gradient(120deg, rgba(255, 255, 255, 0.05), rgba(255, 255, 255, 0));
+      border-radius: 30px;
       position: absolute;
       top: 0;
       left: 0;
@@ -24,6 +26,7 @@
       backface-visibility: hidden;
       padding: 2.4rem;
       z-index: 1;
+      -webkit-transform: translate3d(0,0,0);
 
       display: flex;
       flex-direction: column;
@@ -68,13 +71,12 @@
             font-weight: 600;
           }
         }
-        @include icon;
       }
     }
 
     .back {
-      @include afterElementForFlippingCard;
-
+      background: linear-gradient(120deg, rgba(255, 255, 255, 0.05), rgba(255, 255, 255, 0));
+      border-radius: 30px;
       position: absolute;
       top: 0;
       left: 0;
@@ -103,9 +105,8 @@
       .english,
       .russian {
         position: absolute;
-        top: 45%;
-        left: 8%;
         text-align: center;
+        display: inline-block;
 
         span {
           color: rgb(147, 201, 198);
@@ -129,14 +130,19 @@
         }
       }
 
+      .czech {
+        top: 45%;
+        left: 8%;
+      }
+
       .english {
         top: 60%;
-        left: 54%;
+        right: 8%;
       }
 
       .russian {
         top: 80%;
-        left: 42%;
+        left: 50%;
         transform: translateX(-50%);
       }
 

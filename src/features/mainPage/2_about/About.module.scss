@@ -3,13 +3,21 @@
 
 .box {
   @include inEachBox;
-  @include beforeElement;
 
   grid-area: aboutMe;
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: space-between;
   transition: 0.5s;
+  background: linear-gradient(120deg, rgba(255, 255, 255, 0.05), rgba(255, 255, 255, 0));
+
+  .signatureBox {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+  }
 
   .descriptionIconBox {
     display: flex;
@@ -37,19 +45,10 @@
         font-weight: 600;
       }
     }
-    @include icon;
-  }
-
-  &:hover {
-    background: rgba($color-primary, 0.35);
-  }
-
-  @media (max-width: 1050px) {
-    .signature {
-      height: 80%;
-      margin: 0 auto;
-    }
-  }
-  @media (max-width: 450px) {
   }
 }
+
+.box:hover {
+  transform: scale(1.05);
+}
+

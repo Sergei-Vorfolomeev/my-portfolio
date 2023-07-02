@@ -4,6 +4,7 @@ import { useNavigate } from 'react-router-dom'
 
 import icon from 'common/assets/svg/icon-portfolio.svg'
 import s from 'features/mainPage/7_services/Services.module.scss'
+import { CommonIcon } from "common/icons/common-icon/common-icon";
 
 export const Services = () => {
   const navigate = useNavigate()
@@ -15,7 +16,7 @@ export const Services = () => {
           {/*<h4>My abilities</h4>*/}
           <h1>Services</h1>
         </div>
-        <img src={icon} alt="icon" onClick={() => navigate('/services')} className={s.icon} />
+        <CommonIcon />
       </div>
     </div>
   )
