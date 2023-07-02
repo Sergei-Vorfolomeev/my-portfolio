@@ -59,27 +59,6 @@ export const AboutPage = () => {
               ))}
             </div>
           </div>
-          <div className={s.education}>
-            <h2>Education</h2>
-            <div>
-              <h3>Sertificate of Frontend Developer</h3>
-              <h4>IT-Incubator</h4>
-              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-              <h4>2022 – 2023</h4>
-            </div>
-            <div>
-              <h3>Upper Intermediate in Czech</h3>
-              <h4>Go Study Language School</h4>
-              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-              <h4>2021 – 2022</h4>
-            </div>
-            <div>
-              <h3>Specialist degree in medicine</h3>
-              <h4>Saratov State Medical University</h4>
-              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-              <h4>2014 – 2020</h4>
-            </div>
-          </div>
           <div className={s.skills}>
             <h2>Skills</h2>
             <div className={s.listsBox}>
@@ -103,6 +82,27 @@ export const AboutPage = () => {
                 <li>Material-UI</li>
                 <li>Storybook</li>
               </ul>
+            </div>
+          </div>
+          <div className={s.education}>
+            <h2>Education</h2>
+            <div>
+              <h3>Sertificate of Frontend Developer</h3>
+              <h4>IT-Incubator</h4>
+              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+              <h4>2022 – 2023</h4>
+            </div>
+            <div>
+              <h3>Upper Intermediate in Czech</h3>
+              <h4>Go Study Language School</h4>
+              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+              <h4>2021 – 2022</h4>
+            </div>
+            <div>
+              <h3>Specialist degree in medicine</h3>
+              <h4>Saratov State Medical University</h4>
+              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+              <h4>2014 – 2020</h4>
             </div>
           </div>
           <div className={s.languages}>
