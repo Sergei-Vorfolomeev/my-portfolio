@@ -87,6 +87,7 @@ export const AboutPage = () => {
                 <li>React</li>
                 <li>Redux</li>
                 <li>Redux Toolkit</li>
+                <li>Next JS</li>
                 <li>Angular</li>
                 <li>Typescript</li>
                 <li>REST API</li>
@@ -95,6 +96,8 @@ export const AboutPage = () => {
               <ul>
                 <li>SCSS</li>
                 <li>HTML</li>
+                <li>Node JS</li>
+                <li>Express</li>
                 <li>GIT / GITHUB</li>
                 <li>Unit-tests</li>
                 <li>Material-UI</li>
